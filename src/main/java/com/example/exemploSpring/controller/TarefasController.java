@@ -72,7 +72,7 @@ public class TarefasController {
 		ModelAndView mv = new ModelAndView();
 		Tarefa tarefa = repositorioTarefa.getOne(id);
 		mv.addObject("tarefa",tarefa);
-		mv.setViewName("/tarefas/alterar");
+		mv.setViewName("tarefas/alterar");
 		return mv;
 	}
 	
